@@ -1,0 +1,24 @@
+//----- SECTION 1 >>>>>
+.header
+  width: 100%
+  height: auto
+  margin: 0 0 50vh
+  padding: 20px 0
+  text-align: center
+  border: thin solid #a2323f
+  border-radius: 20px
+  box-shadow: 2px 2px 2px lightgrey
+  +bg-blend
+  h1
+    width: 100%
+    height: auto
+    margin: 0
+    padding: 5px 0 10px
+    +h1-font-media
+    @media (min-width: 320px) and (max-width: 899px)
+      text-align: center
+
+  p
+    +p-font-media
+    @media (min-width: 320px) and (max-width: 899px)
+      text-align: center

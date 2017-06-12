@@ -1,0 +1,33 @@
+.picFrame
+  position: relative
+  flex: 1 26%
+  margin: 20px 1%
+  padding: 15px
+  border: thin solid #a2323f
+  border-radius: 4%
+  +bg-blend
+  @media (max-width: 600px)
+    flex: 0 80%
+  @media (min-width: 610px) and (max-width: 1024)
+    flex: 0 45%
+  h2
+    margin: 0 0 15px
+    padding: 5px 0 10px
+    text-align: center
+    text-shadow: 1.25px 1px 1px #a2323f
+    font-weight: 600
+    color: #b7b7b7
+    background: #333
+    border-radius: 10px
+    border: thin solid #a2323f
+    +h2-font-media
+  .pic
+    width: 100%
+    border-radius: 4%
+    border: medium solid #333
+    +trans-1
+.picFrame:hover
+  .pic
+    transform: scale(1.5)
+    @media (max-width: 600px)
+    @media (min-width: 610px) and (max-width: 1024)
