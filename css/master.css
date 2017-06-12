@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto+Slab|Ubuntu");
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 3.23607em; }
+
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(#050712, #777);
+  color: #fff;
+  font-family: Ubuntu;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: visible;
+  letter-spacing: 1.125px; }
+
+#bgImg {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: a;
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 300px) and (max-width: 576px) {
+    #bgImg img {
+      width: 900px;
+      height: auto;
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      z-index: -100;
+      transform: translateY(30%); } }
+  @media (min-width: 577px) and (max-width: 899px) {
+    #bgImg img {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      z-index: -100;
+      transform: translateY(50%); } }
+  @media (min-width: 900px) and (max-width: 1200px) {
+    #bgImg img {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      z-index: -100;
+      transform: translateX(-30%); } }
+  @media screen and (min-width: 1200px) {
+    #bgImg img {
+      width: 100vw;
+      height: auto;
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      z-index: -100;
+      transform: translateX(0%); } }
+
+section {
+  margin: 0;
+  padding: 70px 0 0;
+  min-height: 80vh;
+  color: #fff;
+  border: thin solid #c5c5c5; }
+
+.boxContainer {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0; }
+
+.rowWrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+.rowNoWrap {
+  display: flex;
+  flex-flow: row nowrap; }
+
+.header {
+  width: 100%;
+  height: auto;
+  margin: 0 0 50vh;
+  padding: 20px 0;
+  text-align: center;
+  border: thin solid #a2323f;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px lightgrey;
+  background: linear-gradient(rgba(5, 7, 18, 0.7) 30%, rgba(183, 183, 183, 0.6) 80%); }
+  .header h1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 5px 0 10px; }
+    @media (min-width: 300px) and (max-width: 576px) {
+      .header h1 {
+        font-size: 0.6rem; } }
+    @media (min-width: 577px) and (max-width: 899px) {
+      .header h1 {
+        font-size: 0.7rem; } }
+    @media (min-width: 900px) and (max-width: 1200px) {
+      .header h1 {
+        font-size: 0.8rem; } }
+    @media (min-width: 1200px) {
+      .header h1 {
+        font-size: 0.9rem; } }
+    @media (min-width: 320px) and (max-width: 899px) {
+      .header h1 {
+        text-align: center; } }
+  @media (min-width: 300px) and (max-width: 576px) {
+    .header p {
+      font-size: 0.3rem; } }
+  @media (min-width: 577px) and (max-width: 899px) {
+    .header p {
+      font-size: 0.4rem; } }
+  @media (min-width: 900px) and (max-width: 1200px) {
+    .header p {
+      font-size: 0.5rem; } }
+  @media (min-width: 1200px) {
+    .header p {
+      font-size: 0.6rem; } }
+  @media (min-width: 320px) and (max-width: 899px) {
+    .header p {
+      text-align: center; } }
+
+.picFrame {
+  position: relative;
+  flex: 1 26%;
+  margin: 20px 1%;
+  padding: 15px;
+  border: thin solid #a2323f;
+  border-radius: 4%;
+  background: linear-gradient(rgba(5, 7, 18, 0.7) 30%, rgba(183, 183, 183, 0.6) 80%); }
+  @media (max-width: 600px) {
+    .picFrame {
+      flex: 0 80%; } }
+  @media (min-width: 610px) and (max-width: 1024) {
+    .picFrame {
+      flex: 0 45%; } }
+  .picFrame h2 {
+    margin: 0 0 15px;
+    padding: 5px 0 10px;
+    text-align: center;
+    text-shadow: 1.25px 1px 1px #a2323f;
+    font-weight: 600;
+    color: #b7b7b7;
+    background: #333;
+    border-radius: 10px;
+    border: thin solid #a2323f; }
+    @media (min-width: 300px) and (max-width: 576px) {
+      .picFrame h2 {
+        font-size: 0.5rem; } }
+    @media (min-width: 577px) and (max-width: 899px) {
+      .picFrame h2 {
+        font-size: 0.6rem; } }
+    @media (min-width: 900px) and (max-width: 1200px) {
+      .picFrame h2 {
+        font-size: 0.7rem; } }
+    @media (min-width: 1200px) {
+      .picFrame h2 {
+        font-size: 0.8rem; } }
+  .picFrame .pic {
+    width: 100%;
+    border-radius: 4%;
+    border: medium solid #333;
+    transition: 1s ease-in-out 0.1s; }
+
+.picFrame:hover .pic {
+  transform: scale(1.5);
+  z-index: 99; }
+
+/*# sourceMappingURL=master.css.map */
