@@ -1,0 +1,47 @@
+#bgImg
+  position: absolute
+  z-index: -100
+  top: 0
+  left: 0
+  width: 100%
+  height: auto
+  margin: 0
+  padding: 0
+  //box-sizing: border-box
+  //overflow: hidden
+  @media (min-width: 300px) and (max-width: 576px) and (orientation: portrait)
+    img
+      width: 800px
+      height: auto
+      position: fixed
+      margin: 0
+      padding: 0
+      z-index: -100
+      transform: translate(-25%, 20%)
+  @media screen and (min-width: 577px) and (max-width: 899px) and (orientation: portrait)
+    img
+      width: 1200px
+      height: auto
+      position: fixed
+      margin: 0
+      padding: 0
+      z-index: -100
+      transform: translate(-25%, 10%)
+  @media screen and (min-width: 900px) and (max-width: 1200px) and (orientation: landscape)
+    img
+      width: 100%
+      height: auto
+      position: fixed
+      margin: 0
+      padding: 0
+      z-index: -100
+      //transform: translateX(-30%)
+  @media screen and (min-width: 1200px)
+    img
+      width: 100vw
+      height: auto
+      position: fixed
+      margin: 0
+      padding: 0
+      z-index: -100
+      transform: translateX(0%)
