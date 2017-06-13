@@ -11127,8 +11127,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
   color: #a2323f;
-  background-color: #444;
-  padding-left: 30px; }
+  background-color: #444; }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
@@ -13439,6 +13438,7 @@ section {
       transform: translate(-26%, 0%); } }
   @media screen and (min-width: 577px) and (max-width: 899px) and (orientation: landscape) {
     #bgImg img {
+      position: fixed;
       width: auto;
       height: auto;
       transform: translate(-28%, 0%); } }
@@ -13467,8 +13467,9 @@ section {
   padding: 20px 0;
   text-align: center;
   border: thin solid #a2323f;
+  border-bottom: 2px solid #333333;
   border-radius: 20px;
-  box-shadow: 2px 2px 2px lightgrey;
+  box-shadow: 3px 1px 3px lightgrey;
   background: linear-gradient(rgba(5, 7, 18, 0.7) 30%, rgba(183, 183, 183, 0.6) 80%); }
   .header h1 {
     width: 100%;
