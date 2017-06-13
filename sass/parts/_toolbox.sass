@@ -1,5 +1,7 @@
 @mixin bg-blend
-  background: linear-gradient(rgba(5, 7, 18, .7) 30%, rgba(183, 183, 183, .6) 80%)
+  background: linear-gradient(rgba(5, 7, 18, .7) 30%, rgba(183, 0, 5, .6) 80%)
+
+$redish: rgba(183, 0, 5, .6)
 
 
 @mixin h1-font-media
@@ -8,9 +10,11 @@
   @media (min-width: 577px) and (max-width: 899px)
     font-size: .7rem
   @media (min-width: 900px) and (max-width: 1200px)
-    font-size: .8rem
-  @media (min-width: 1200px)
     font-size: .9rem
+  @media (min-width: 1200px)
+    font-size: 1rem
+h1
+  +h1-font-media
 
 @mixin h2-font-media
   @media (min-width: 300px) and (max-width: 576px)
@@ -45,6 +49,8 @@ a
     font-size: .5rem
   @media (min-width: 1200px)
     font-size: .6rem
+p
+  +p-font-media
 
 @mixin trans-1
   transition: 1s ease-in-out .1s
