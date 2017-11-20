@@ -1,4 +1,56 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto+Slab|Ubuntu");
+@media (min-width: 300px) and (max-width: 576px) {
+  h1 {
+    font-size: 0.6rem; } }
+@media (min-width: 577px) and (max-width: 899px) {
+  h1 {
+    font-size: 0.7rem; } }
+@media (min-width: 900px) and (max-width: 1200px) {
+  h1 {
+    font-size: 0.9rem; } }
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 1rem; } }
+
+@media (min-width: 300px) and (max-width: 576px) {
+  .navbar-brand {
+    font-size: 0.4rem; } }
+@media (min-width: 577px) and (max-width: 899px) {
+  .navbar-brand {
+    font-size: 0.5rem; } }
+@media (min-width: 900px) and (max-width: 1200px) {
+  .navbar-brand {
+    font-size: 0.6rem; } }
+@media (min-width: 1200px) {
+  .navbar-brand {
+    font-size: 0.7rem; } }
+
+@media (min-width: 300px) and (max-width: 576px) {
+  a {
+    font-size: 0.4rem; } }
+@media (min-width: 577px) and (max-width: 899px) {
+  a {
+    font-size: 0.5rem; } }
+@media (min-width: 900px) and (max-width: 1200px) {
+  a {
+    font-size: 0.6rem; } }
+@media (min-width: 1200px) {
+  a {
+    font-size: 0.7rem; } }
+
+@media (min-width: 300px) and (max-width: 576px) {
+  p {
+    font-size: 0.3rem; } }
+@media (min-width: 577px) and (max-width: 899px) {
+  p {
+    font-size: 0.4rem; } }
+@media (min-width: 900px) and (max-width: 1200px) {
+  p {
+    font-size: 0.5rem; } }
+@media (min-width: 1200px) {
+  p {
+    font-size: 0.6rem; } }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -11129,6 +11181,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:hover {
   color: #fff;
   transform: scale(0.9);
+  text-shadow: 1px 1px 1px rgba(183, 0, 5, 0.6);
   background-color: rgba(23, 23, 23, 0.5);
   box-sizing: border-box;
   overflow: hidden; }
@@ -11137,7 +11190,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   color: #555;
-  background-color: rgba(23, 23, 23, 0.5); }
+  background-color: rgba(23, 23, 23, 0.5);
+  border-bottom: 1px solid rgba(183, 0, 5, 0.6); }
 
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:focus,
@@ -13296,157 +13350,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 /*# sourceMappingURL=bootstrap.min.css.map */
-@media (min-width: 300px) and (max-width: 576px) {
-  h1 {
-    font-size: 0.6rem; } }
-@media (min-width: 577px) and (max-width: 899px) {
-  h1 {
-    font-size: 0.7rem; } }
-@media (min-width: 900px) and (max-width: 1200px) {
-  h1 {
-    font-size: 0.9rem; } }
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 1rem; } }
-
-@media (min-width: 300px) and (max-width: 576px) {
-  .navbar-brand {
-    font-size: 0.4rem; } }
-@media (min-width: 577px) and (max-width: 899px) {
-  .navbar-brand {
-    font-size: 0.5rem; } }
-@media (min-width: 900px) and (max-width: 1200px) {
-  .navbar-brand {
-    font-size: 0.6rem; } }
-@media (min-width: 1200px) {
-  .navbar-brand {
-    font-size: 0.7rem; } }
-
-@media (min-width: 300px) and (max-width: 576px) {
-  a {
-    font-size: 0.4rem; } }
-@media (min-width: 577px) and (max-width: 899px) {
-  a {
-    font-size: 0.5rem; } }
-@media (min-width: 900px) and (max-width: 1200px) {
-  a {
-    font-size: 0.6rem; } }
-@media (min-width: 1200px) {
-  a {
-    font-size: 0.7rem; } }
-
-@media (min-width: 300px) and (max-width: 576px) {
-  p {
-    font-size: 0.3rem; } }
-@media (min-width: 577px) and (max-width: 899px) {
-  p {
-    font-size: 0.4rem; } }
-@media (min-width: 900px) and (max-width: 1200px) {
-  p {
-    font-size: 0.5rem; } }
-@media (min-width: 1200px) {
-  p {
-    font-size: 0.6rem; } }
-
-/*!
- * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-body {
-  width: 100%;
-  height: 100%; }
-
-html {
-  width: 100%;
-  height: 100%; }
-
-@media(min-width:767px) {
-  .navbar {
-    background: rgba(122, 122, 122, 0.5);
-    padding: 20px 0;
-    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; }
-
-  .top-nav-collapse {
-    padding: 0; } }
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based. The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children of those sections to manage the look and feel of the site. */
-.intro-section {
-  height: 100%;
-  padding-top: 150px;
-  text-align: center;
-  background: #fff; }
-
-.about-section {
-  height: 100%;
-  padding-top: 150px;
-  text-align: center;
-  background: #eee; }
-
-.services-section {
-  height: 100%;
-  padding-top: 150px;
-  text-align: center;
-  background: #fff; }
-
-.contact-section {
-  height: 100%;
-  padding-top: 150px;
-  text-align: center;
-  background: #eee; }
-
-#bgImg {
-  position: absolute;
-  z-index: -100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow: hidden; }
-  @media (min-width: 300px) and (max-width: 576px) and (orientation: portrait) {
-    #bgImg img {
-      height: 100%;
-      position: fixed;
-      margin: 0;
-      padding: 0;
-      z-index: -100;
-      transform: translate(-30%, 0%); } }
-  @media screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait) {
-    #bgImg img {
-      height: 100%;
-      position: fixed;
-      margin: 0;
-      padding: 0;
-      z-index: -100;
-      transform: translate(-26%, 0%); } }
-  @media screen and (min-width: 577px) and (max-width: 992px) and (orientation: landscape) {
-    #bgImg img {
-      position: fixed;
-      width: auto;
-      height: auto;
-      transform: translate(-30%, 0%); } }
-  @media screen and (min-width: 993px) and (max-width: 1200px) and (orientation: landscape) {
-    #bgImg img {
-      width: 100%;
-      height: auto;
-      position: fixed;
-      margin: 0;
-      padding: 0;
-      z-index: -100; } }
-  @media screen and (min-width: 1200px) {
-    #bgImg img {
-      width: 100vw;
-      height: auto;
-      position: fixed;
-      margin: 0;
-      padding: 0;
-      z-index: -100;
-      transform: translateX(0%); } }
-
 html {
   margin: 0;
   padding: 0;
@@ -13489,6 +13392,57 @@ section {
 .rowNoWrap {
   display: flex;
   flex-flow: row nowrap; }
+
+#bgImg {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden; }
+  @media (min-width: 300px) and (max-width: 576px) and (orientation: portrait) {
+    #bgImg img {
+      height: 100%;
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      z-index: -100;
+      transform: translate(-32%, 0%); } }
+  @media screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait) {
+    #bgImg img {
+      height: 100%;
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      z-index: -100;
+      transform: translate(-26%, 0%); } }
+  @media screen and (min-width: 577px) and (max-width: 992px) and (orientation: landscape) {
+    #bgImg img {
+      position: fixed;
+      width: auto;
+      height: auto;
+      transform: translate(-30%, 0%); } }
+  @media screen and (min-width: 993px) and (max-width: 1200px) and (orientation: landscape) {
+    #bgImg img {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      z-index: -100; } }
+  @media screen and (min-width: 1200px) {
+    #bgImg img {
+      width: 100vw;
+      height: auto;
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      z-index: -100;
+      transform: translateX(0%); } }
 
 .header {
   width: 100%;
@@ -13558,7 +13512,7 @@ section {
     text-shadow: 1.25px 1px 1px #a2323f;
     font-weight: 600;
     color: #e2e2e2;
-    background: rgba(22, 22, 22, 0.95);
+    background: #333;
     border-radius: 20px;
     border: thin solid #a2323f; }
     @media (min-width: 300px) and (max-width: 576px) {

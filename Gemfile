@@ -2,6 +2,6 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem 'sass'
-gem 'sass-rails'
-gem 'chunky_png', '~> 1.3', '>= 1.3.8'
+
+# Added at 2017-11-20 00:54:53 -0600 by MC7:
+gem "compass", "~> 1.0"

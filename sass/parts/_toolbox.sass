@@ -1,56 +1,35 @@
 @mixin bg-blend
   background: linear-gradient(rgba(5, 7, 18, .7) 30%, rgba(183, 0, 5, .6) 80%)
 
-$redish: rgba(183, 0, 5, .6)
+$clr-redish: rgba(183, 0, 5, .6)
 
 
 @mixin h1-font-media
-  @media (min-width: 300px) and (max-width: 576px)
-    font-size: .6rem
-  @media (min-width: 577px) and (max-width: 899px)
-    font-size: .7rem
-  @media (min-width: 900px) and (max-width: 1200px)
-    font-size: .9rem
-  @media (min-width: 1200px)
-    font-size: 1rem
-h1
-  +h1-font-media
+  font-size: 2em
+  @media (min-width: 700px)
+    font-size: 2.5em
 
 @mixin h2-font-media
-  @media (min-width: 300px) and (max-width: 576px)
-    font-size: .5rem
-  @media (min-width: 577px) and (max-width: 899px)
-    font-size: .6rem
-  @media (min-width: 900px) and (max-width: 1200px)
-    font-size: .7rem
-  @media (min-width: 1200px)
-    font-size: .8rem
+  font-size: 1.8em
+  @media (min-width: 700px)
+    font-size: 2.3em
+
+@mixin h3-font-media
+  font-size: 1.4em
+  @media (min-width: 700px)
+    font-size: 1.8em
 
 @mixin a-font-media
-  @media (min-width: 300px) and (max-width: 576px)
-    font-size: .4rem
-  @media (min-width: 577px) and (max-width: 899px)
-    font-size: .5rem
-  @media (min-width: 900px) and (max-width: 1200px)
-    font-size: .6rem
-  @media (min-width: 1200px)
-    font-size: .7rem
-.navbar-brand
-  +a-font-media
-a
-  +a-font-media
+  font-size: 1.6em
+  @media (min-width: 700px)
+    font-size: 2.5em
 
 @mixin p-font-media
-  @media (min-width: 300px) and (max-width: 576px)
-    font-size: .3rem
-  @media (min-width: 577px) and (max-width: 899px)
-    font-size: .4rem
-  @media (min-width: 900px) and (max-width: 1200px)
-    font-size: .5rem
-  @media (min-width: 1200px)
-    font-size: .6rem
-p
-  +p-font-media
+  font-size: 1.2em
+  @media (min-width: 700px)
+    font-size: 1.5em
 
+@mixin trans-0
+  transition: .5s ease-in-out .03s
 @mixin trans-1
-  transition: 1s ease-in-out .1s
+  transition: 1s ease-in-out .03s
